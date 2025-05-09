@@ -1,0 +1,25 @@
+Команда,Опис
+git clone https://github.com/Myroslavaaa/HW_10.git,Клонування репозиторію з GitHub
+cd HW_10,Перехід до директорії репозиторію
+touch text_ignore.txt,Створення файлу text_ignore.txt
+echo "text_ignore.txt" >> .gitignore,Додавання файлу до .gitignore
+git status,Перевірка статусу змін
+git add .,Індексація всіх змін
+git commit -m "Add text_ignore.txt to .gitignore",Коміт змін
+touch main_test.txt,Створення файлу main_test.txt
+git add .,Індексація змін
+git commit -m "Add main_test.txt",Коміт
+git checkout -b develop,Створення і перехід на гілку develop
+touch develop_test.txt,Створення develop_test.txt
+git add .,Індексація
+git commit -m "Add develop_test.txt",Коміт
+echo "just a small change" >> develop_test.txt,Редагування develop_test.txt
+git status,Перевірка змін
+git add .,Індексація змін
+git commit -m "Update develop_test.txt with small change",Коміт змін
+git checkout main,Повернення до гілки main
+git merge develop,Об'єднання develop у main
+git log --oneline,Перегляд історії комітів
+history 0 > command_list.csv,Збереження історії команд у CSV
+
+
